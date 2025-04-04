@@ -23,11 +23,7 @@ This package implements these metrics and combines them into an ensemble for mor
 
 ## Method
 
-Our approach uses an ensemble of zero-cost proxies to evaluate neural network architectures without training. The ensemble score is a weighted combination of individual metrics:
-
-### Mathematical Expression
-
-The ensemble score for an architecture $A$ on dataset $D$ is computed as:
+My approach uses an ensemble of zero-cost proxies to evaluate neural network architectures without training. The ensemble score is a weighted combination of individual metrics such that, for an architecture $A$ on dataset $D$, is computed as
 
 $$S_{ensemble}(A, D) = \sum_{i=1}^{n} w_i \cdot \text{normalize}(m_i(A, D))$$
 
@@ -147,7 +143,7 @@ logger = setup_logger(level="INFO", log_file="nas.log")
 
 ## Contributing
 
-Contributions are welcome! Please check out our [contributing guidelines](CONTRIBUTING.md) for details.
+Contributions are welcome! Please check out the [contributing guidelines](CONTRIBUTING.md) for details.
 
 ## License
 
@@ -155,7 +151,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use this package in your project, please cite it:
+If you use this package in your project, please cite it using
 
 ```bibtex
 @software{sadoune2025zerocost,
