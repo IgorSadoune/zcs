@@ -42,6 +42,21 @@ full-example:
 build:
 	python setup.py sdist bdist_wheel
 
+# Check package
+check-package:
+    twine check dist/*
+
+# Upload to TestPyPI
+upload-test:
+    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+# Upload to PyPI
+upload:
+    twine upload dist/*
+	
+# Or test first on TestPyPI
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
 # Test local installation
 test-install: clean install
 	python test_local_install.py

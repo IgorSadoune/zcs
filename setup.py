@@ -7,7 +7,7 @@ with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
 
 setup(
     name="zero_cost_search",
-    version="0.1.0",
+    version="0.1.1",
     author="Igor Sadoune",
     author_email="igor.sadoune@neuralmachines.ai",
     description="Zero-Cost Neural Architecture Search for MLPs",
