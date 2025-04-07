@@ -1,6 +1,6 @@
 # Makefile for zero_cost_search package
 
-.PHONY: install test clean lint format example
+.PHONY: install test clean lint format example build check-package upload-test upload test-install
 
 install:
 	pip install -e .
@@ -44,18 +44,15 @@ build:
 
 # Check package
 check-package:
-    twine check dist/*
+	twine check dist/*
 
 # Upload to TestPyPI
 upload-test:
-    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 # Upload to PyPI
 upload:
-    twine upload dist/*
-	
-# Or test first on TestPyPI
-twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	twine upload dist/*
 
 # Test local installation
 test-install: clean install
