@@ -1,6 +1,6 @@
 # Contributing to Zero-Cost Search
 
-Thank you for your interest in contributing to the Zero-Cost Search project! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to the Zero-Cost Search project! This document provides guidelines and instructions for contributing. However, if you are interested in contributing, please contact me at [igor.sadoune@pm.me](mailto:igor.sadoune@pm.me).
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ The project is organized as follows:
 
 ```
 zero_cost_package/
-├── zero_cost_search/           # Main package directory
+├── zcs/                        # Main package directory
 │   ├── __init__.py             # Package initialization
 │   ├── zero_cost_search.py     # Core implementation
 │   ├── cli.py                  # Command-line interface

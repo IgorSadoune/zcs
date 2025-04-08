@@ -6,10 +6,10 @@ with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
     long_description = f.read()
 
 setup(
-    name="zero_cost_search",
+    name="zcs",
     version="0.1.1",
     author="Igor Sadoune",
-    author_email="igor.sadoune@neuralmachines.ai",
+    author_email="igor.sadoune@pm.me",
     description="Zero-Cost Neural Architecture Search for MLPs",
     long_description=long_description,
     long_description_content_type="text/markdown",

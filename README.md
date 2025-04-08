@@ -44,14 +44,14 @@ The metrics we use include:
 ## Installation
 
 ```bash
-pip install zero-cost-search
+pip install zcs
 ```
 
 Or install from source:
 
 ```bash
 git clone https://github.com/yourusername/zero_cost_search.git
-cd zero_cost_search
+cd zcs
 pip install -e .
 ```
 
@@ -63,20 +63,20 @@ The package provides a command-line interface for easy use:
 
 ```bash
 # Basic usage
-zero-cost-search --data your_data.pt --output results.json
+zcs --data your_data.pt --output results.json
 
 # With visualization
-zero-cost-search --data your_data.pt --output results.json --plot search_results.png
+zcs --data your_data.pt --output results.json --plot search_results.png
 
 # Customizing the search space
-zero-cost-search --data your_data.pt \
+zcs --data your_data.pt \
                  --depths 2 3 4 \
                  --widths 64 128 256 \
                  --activations relu tanh leaky_relu \
                  --num-samples 20
 
 # Help
-zero-cost-search --help
+zcs --help
 ```
 
 ### Python API
@@ -85,7 +85,7 @@ zero-cost-search --help
 
 ```python
 import torch
-from zero_cost_search import ZeroCostNAS
+from zcs import ZeroCostNAS
 
 # Prepare your data
 X = torch.randn(100, 20)  # 100 samples, 20 features
@@ -126,7 +126,7 @@ print(f"Best score: {summary['best_score']:.4f}")
 ### Visualization
 
 ```python
-from zero_cost_search import plot_search_results
+from zcs import plot_search_results
 
 # Plot the search results
 plot_search_results(result, save_path="search_results.png")
@@ -135,10 +135,10 @@ plot_search_results(result, save_path="search_results.png")
 ### Logging
 
 ```python
-from zero_cost_search import setup_logger
+from zcs import setup_logger
 
 # Set up logging
-logger = setup_logger(level="INFO", log_file="nas.log")
+logger = setup_logger(level="INFO", log_file="zcs.log")
 ```
 
 ## Contributing
@@ -158,6 +158,6 @@ If you use this package in your project, please cite it using
   title={Zero-Cost-Search: A Python Package for Zero-Cost Neural Architecture Search},
   author={Sadoune, Igor},
   year={2025},
-  url={https://github.com/igorsadoune/zero_cost_search}
+  url={https://github.com/igorsadoune/zcs}
 }
 ```

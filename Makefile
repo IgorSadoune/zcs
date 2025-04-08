@@ -1,4 +1,4 @@
-# Makefile for zero_cost_search package
+# Makefile for zcs package
 
 .PHONY: install test clean lint format example build check-package upload-test upload test-install
 
@@ -12,7 +12,7 @@ test:
 	pytest
 
 test-cov:
-	pytest --cov=zero_cost_search
+	pytest --cov=zcs
 
 clean:
 	rm -rf build/
@@ -25,11 +25,11 @@ clean:
 
 # Linting and formatting
 lint:
-	flake8 zero_cost_search tests examples
+	flake8 zcs tests examples
 
 format:
-	black zero_cost_search tests examples
-	isort zero_cost_search tests examples
+	black zcs tests examples
+	isort zcs tests examples
 
 # Run examples
 example:
