@@ -33,14 +33,14 @@ format:
 
 # Run examples
 example:
-	python examples/run_example.py
+	python3 examples/run_example.py
 
 full-example:
-	python examples/example.py
+	python3 examples/example.py
 
 # Build package
 build:
-	python setup.py sdist bdist_wheel
+	python3 setup.py sdist bdist_wheel
 
 # Check package
 check-package:

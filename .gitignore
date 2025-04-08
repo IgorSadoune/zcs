@@ -1,5 +1,5 @@
 # Virtual environment 
-zcs_env/
+env_zcs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

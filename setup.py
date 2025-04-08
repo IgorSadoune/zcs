@@ -13,7 +13,7 @@ setup(
     description="Zero-Cost Neural Architecture Search for MLPs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/IgorSadoune/zero_cost_search",
+    url="https://github.com/IgorSadoune/zcs",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -41,7 +41,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'zero-cost-search=zero_cost_search.cli:main',
+            'zcs=zcs.cli:main',
         ],
     },
 )

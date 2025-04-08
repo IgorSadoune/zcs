@@ -1,13 +1,13 @@
 # zero_cost_search package
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 from .cli import main as cli_main
 from .models import MLP
 from .utils import (export_to_onnx, export_to_torchscript, plot_search_results,
                     setup_logger)
 from .zero_cost_search import (ArchitecturePredictor, DatasetFeatureExtractor,
-                               ZeroCostMetrics, ZeroCostNAS)
+                                ZeroCostMetrics, ZeroCostNAS)
 
 __all__ = [
     "ZeroCostNAS",

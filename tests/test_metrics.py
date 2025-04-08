@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 import torch
 
-from zero_cost_search import MLP, ZeroCostMetrics
+from zcs import MLP, ZeroCostMetrics
 
 
 @pytest.fixture

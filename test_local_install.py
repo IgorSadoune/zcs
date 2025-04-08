@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Test local installation of the zero_cost_search package
+Test local installation of the zcs package
 
 This script verifies that the package can be imported and used after installation.
 
@@ -13,14 +13,14 @@ import sys
 
 
 def main():
-    print("Testing local installation of zero_cost_search...")
+    print("Testing local installation of zcs...")
     
     try:
-        import zero_cost_search
-        print(f"Successfully imported zero_cost_search version {zero_cost_search.__version__}")
+        import zcs
+        print(f"Successfully imported zcs version {zcs.__version__}")
         
         # Check that main classes are available
-        from zero_cost_search import ZeroCostNAS, ZeroCostMetrics, MLP
+        from zcs import ZeroCostNAS, ZeroCostMetrics, MLP
         print("Successfully imported main classes")
         
         # Create a simple instance
