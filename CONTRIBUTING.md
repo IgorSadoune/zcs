@@ -57,8 +57,8 @@ zero_cost_package/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/IgorSadoune/zero_cost_search.git
-   cd zero_cost_search
+   git clone https://github.com/IgorSadoune/zcs.git
+   cd zcs
    ```
 
 2. Create a virtual environment (optional but recommended):
