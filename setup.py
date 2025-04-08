@@ -6,14 +6,14 @@ with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
     long_description = f.read()
 
 setup(
-    name="zcs",
-    version="0.1.2",
+    name="zcsearch",
+    version="0.1.3",
     author="Igor Sadoune",
     author_email="igor.sadoune@pm.me",
     description="Zero-Cost Neural Architecture Search for MLPs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/IgorSadoune/zcs",
+    url="https://github.com/IgorSadoune/zcsearch",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -41,7 +41,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'zcs=zcs.cli:main',
+            'zcsearch=zcsearch.cli:main',
         ],
     },
 )

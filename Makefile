@@ -1,4 +1,4 @@
-# Makefile for zcs package
+# Makefile for zcsearch package
 
 .PHONY: install test clean lint format example build check-package upload-test upload test-install
 
@@ -25,11 +25,11 @@ clean:
 
 # Linting and formatting
 lint:
-	flake8 zcs tests examples
+	flake8 zcsearch tests examples
 
 format:
-	black zcs tests examples
-	isort zcs tests examples
+	black zcsearch tests examples
+	isort zcsearch tests examples
 
 # Run examples
 example:

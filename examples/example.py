@@ -17,7 +17,7 @@ import torch
 # Add the parent directory to the path so we can import the package
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from zcs import ZeroCostNAS, plot_search_results, setup_logger
+from zcsearch import ZeroCostNAS, plot_search_results, setup_logger
 
 
 def main():

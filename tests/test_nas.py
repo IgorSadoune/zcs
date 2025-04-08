@@ -4,7 +4,7 @@ import tempfile
 import pytest
 import torch
 
-from zcs import ZeroCostNAS
+from zcsearch import ZeroCostNAS
 
 
 @pytest.fixture

@@ -4,7 +4,7 @@
 Simple example script for Zero-Cost Neural Architecture Search
 
 This script can be run directly to demonstrate the basic functionality
-of the zcs package.
+of the zcsearch package.
 
 Usage:
     python run_example.py
@@ -17,11 +17,11 @@ import torch
 
 # Try to import directly first (if package is installed)
 try:
-    from zcs import ZeroCostNAS
+    from zcsearch import ZeroCostNAS
 except ImportError:
     # If that fails, add the parent directory to the path (for development)
     sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-    from zcs import ZeroCostNAS
+    from zcsearch import ZeroCostNAS
 
 
 def main():
