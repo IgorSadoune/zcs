@@ -44,14 +44,14 @@ The metrics we use include:
 ## Installation
 
 ```bash
-pip install zcs
+pip install zcsearch
 ```
 
 Or install from source:
 
 ```bash
 git clone https://github.com/yourusername/zero_cost_search.git
-cd zcs
+cd zcsearch
 pip install -e .
 ```
 
@@ -63,20 +63,20 @@ The package provides a command-line interface for easy use:
 
 ```bash
 # Basic usage
-zcs --data your_data.pt --output results.json
+zcsearch --data your_data.pt --output results.json
 
 # With visualization
-zcs --data your_data.pt --output results.json --plot search_results.png
+zcsearch --data your_data.pt --output results.json --plot search_results.png
 
 # Customizing the search space
-zcs --data your_data.pt \
+zcsearch --data your_data.pt \
                  --depths 2 3 4 \
                  --widths 64 128 256 \
                  --activations relu tanh leaky_relu \
                  --num-samples 20
 
 # Help
-zcs --help
+zcsearch --help
 ```
 
 ### Python API
@@ -126,7 +126,7 @@ print(f"Best score: {summary['best_score']:.4f}")
 ### Visualization
 
 ```python
-from zcs import plot_search_results
+from zcsearch import plot_search_results
 
 # Plot the search results
 plot_search_results(result, save_path="search_results.png")
@@ -135,10 +135,10 @@ plot_search_results(result, save_path="search_results.png")
 ### Logging
 
 ```python
-from zcs import setup_logger
+from zcsearch import setup_logger
 
 # Set up logging
-logger = setup_logger(level="INFO", log_file="zcs.log")
+logger = setup_logger(level="INFO", log_file="zcsearch.log")
 ```
 
 ## Contributing
@@ -158,6 +158,6 @@ If you use this package in your project, please cite it using
   title={Zero-Cost-Search: A Python Package for Zero-Cost Neural Architecture Search},
   author={Sadoune, Igor},
   year={2025},
-  url={https://github.com/igorsadoune/zcs}
+  url={https://github.com/igorsadoune/zcsearch}
 }
 ```

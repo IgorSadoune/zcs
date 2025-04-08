@@ -7,7 +7,7 @@ with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
 
 setup(
     name="zcsearch",
-    version="0.1.3",
+    version="0.1.4",
     author="Igor Sadoune",
     author_email="igor.sadoune@pm.me",
     description="Zero-Cost Neural Architecture Search for MLPs",

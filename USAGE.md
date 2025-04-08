@@ -8,8 +8,8 @@ This document provides instructions on how to install, test, and use the Zero-Co
 
 1. Clone the repository (or download the package):
    ```bash
-   git clone https://github.com/IgorSadoune/zero_cost_search.git
-   cd zero_cost_search
+   git clone https://github.com/IgorSadoune/zcsearch.git
+   cd zcsearch
    ```
 
 2. Install the package in development mode:
@@ -30,7 +30,7 @@ This document provides instructions on how to install, test, and use the Zero-Co
 ### Installing from PyPI
 
 ```bash
-pip install zcs
+pip install zcsearch
 ```
 
 ## Running Examples
@@ -87,7 +87,7 @@ make test-cov
 
 ```python
 import torch
-from zcs import ZeroCostNAS
+from zcsearch import ZeroCostNAS
 
 # Prepare your data
 X = torch.randn(100, 20)  # 100 samples, 20 features
@@ -127,10 +127,10 @@ with torch.no_grad():
 ## Logging and Visualization
 
 ```python
-from zcs import setup_logger, plot_search_results
+from zcsearch import setup_logger, plot_search_results
 
 # Set up logging
-logger = setup_logger(level="INFO", log_file="zcs.log")
+logger = setup_logger(level="INFO", log_file="zcsearch.log")
 
 # After running a search, visualize the results
 plot_search_results(result, save_path="search_results.png")

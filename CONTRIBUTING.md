@@ -22,7 +22,7 @@ The project is organized as follows:
 
 ```
 zero_cost_package/
-├── zcs/                        # Main package directory
+├── zcsearch/                   # Main package directory
 │   ├── __init__.py             # Package initialization
 │   ├── zero_cost_search.py     # Core implementation
 │   ├── cli.py                  # Command-line interface
@@ -57,7 +57,7 @@ zero_cost_package/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/IgorSadoune/zcs.git
+   git clone https://github.com/IgorSadoune/zcsearch.git
    cd zcs
    ```
 
@@ -118,16 +118,16 @@ You can run these tools as follows:
 
 ```bash
 # Format code with Black
-black zero_cost_search tests examples
+black zcsearch tests examples
 
 # Sort imports
-isort zero_cost_search tests examples
+isort zcsearch tests examples
 
 # Lint with flake8
-flake8 zero_cost_search tests examples
+flake8 zcsearch tests examples
 
 # Type check with mypy
-mypy zero_cost_search
+mypy zcsearch
 ```
 
 ## Git Workflow
