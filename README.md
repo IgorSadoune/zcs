@@ -158,6 +158,6 @@ If you use this package in your project, please cite it using
   title={Zero-Cost-Search: A Python Package for Zero-Cost Neural Architecture Search},
   author={Sadoune, Igor},
   year={2025},
-  url={https://github.com/igorsadoune/zcsearch}
+  url={https://github.com/IgorSadoune/zcsearch}
 }
 ```
